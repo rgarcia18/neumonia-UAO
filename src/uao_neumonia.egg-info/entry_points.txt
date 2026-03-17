@@ -1,0 +1,2 @@
+[console_scripts]
+uao-neumonia = uao_neumonia.main:main

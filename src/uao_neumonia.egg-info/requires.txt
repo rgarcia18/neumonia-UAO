@@ -1,0 +1,17 @@
+img2pdf>=0.6.3
+pillow>=12.1.0
+pydicom>=3.0.1
+tkcap>=0.0.4
+
+[:sys_platform != "darwin" or platform_machine != "x86_64"]
+numpy>=2.4.2
+opencv-python>=4.13.0.92
+tensorflow>=2.20.0
+
+[:sys_platform == "darwin" and platform_machine == "x86_64"]
+numpy<2
+opencv-python<4.9
+tensorflow==2.14.*
+
+[dev]
+pytest>=8.0.0
